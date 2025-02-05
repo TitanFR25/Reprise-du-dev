@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(70, 68, 68);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.txt_top{
+    color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#text{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border: 2px red solid;
+    padding: 20px;
+}
+
+.txt_div, .txt_diV{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt_div{
+    margin-right: 20px;
+}
+
+.txt_diV{
+    margin-left: 20px;
+}
+
+.txt_divTop{
+    display: flex;
+}
