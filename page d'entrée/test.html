@@ -11,23 +11,33 @@
         <h1>Reprise sur de bonne base</h1>
     </header>
     <main>
-        <p class="txt_top">C'est jolie</p>
-        <p class="txt_top">J'y arrive mieux c'est trop bien</p>
-        <div id="text">
-            <p class="txt_divTop txt_div">je suis trop fort</p>
-            <p class="txt_div">je suis trop fort </p>
-            <p class="txt_diV txt_divTop">je suis trop fort oe </p>
-            <p class="txt_diV">je suis trop fort oe</p>
+        <p class="txt_top">Lorem, ipsum.</p>
+        <p class="txt_top">Lorem ipsum dolor sit amet.</p>
+        <section>
+            <div id="text">
+                <div class="column">
+                    <p class="txt_divTop txt_diV">Lorem, ipsum.</p>
+                    <p class="txt_div">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="column">
+                    <p class="txt_divTop txt_diV">Lorem, ipsum.</p>
+                    <p class="txt_div">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </section>
+        <div id="button_section">
+            <input type="text" id="valueInput" value="0"></input>
+            <div id="button_input">
+                <input type="button" onclick="Increment()" value="+1" class="button">
+                <input type="button" onclick="Decrementer()" value="-1" class="button">
+            </div>
         </div>
-        <input type="button" onclick ="Increment()" class="button">+1</input>
-        <input type="button" onclick ="Decrement()" class="button">-1</input>
-        <input type="text" id="valueInput" value="0"></input>
     </main>
     <footer>
-        <p>c'est fini</p>
+        <p id="finish_footer">fini</p>
         <p>OUAIS</p>
-        <p>Oe</p>
+        <p id="oe_footer">Oe</p>
     </footer>
-    <script src="./test.js"></script>
+    <script src="../test.js"></script>
 </body>
 </html>

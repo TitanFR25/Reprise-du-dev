@@ -1,12 +1,28 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body{
+html, body {
+    height: 100%;  /* Assurer que le html et le body prennent toute la hauteur */
+}
+
+body {
+    display: flex;
+    flex-direction: column;  /* Disposer les enfants en colonne */
     background-color: rgb(70, 68, 68);
 }
-h1{
+
+header, main, footer {
+    flex-shrink: 0;  /* Assurer que les sections ne rétrécissent pas */
+}
+
+main {
+    flex-grow: 1;  /* Permettre au main de prendre tout l'espace disponible */
+}
+
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,36 +31,84 @@ h1{
     padding: 10px;
 }
 
-.txt_top{
+.txt_top {
     color: white;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
 
-#text{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+section {
+    margin-top: 2rem;
     background-color: aqua;
     border: 2px red solid;
-    padding: 20px;
+    max-width: 50%;
+    padding: 1rem;
+    margin-left: auto;  /* Centre la section horizontalement */
+    margin-right: auto;  /* Centre la section horizontalement */
 }
 
-.txt_div, .txt_diV{
-    margin-top: 10px;
+#text {
+    display: flex;  /* Disposer les enfants en ligne */
+    align-items: center;
+    justify-content: center;  /* Centrer les colonnes horizontalement */
+}
+
+.column {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* Disposer les enfants en colonne */
+    margin: 10px;
 }
 
-.txt_div{
-    margin-right: 20px;
+.txt_diV, .txt_div {
+    margin: 10px;
 }
 
-.txt_diV{
-    margin-left: 20px;
+.button {
+    margin-top: 5px;
+    padding: 5px 1rem 5px 1rem;
+    background-color: white;
+    color: red;
+    border-radius: 2px;
 }
 
-.txt_divTop{
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(218, 217, 217);
+}
+
+#valueInput {
+    width: 5%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+#button_section {
+    margin-top: 1rem;
+    text-align: center;
+    border: none;
+    color: red;
+}
+
+#button_input {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.50rem;
+    margin-top: auto;  /* Pousse le footer au bas de la page */
+    background-color: grey;
+    
+    padding: 10px;
+}
+
+#finish_footer {
+    margin-left: 10px;
+}
+
+#oe_footer {
+    margin-right: 10px;
 }

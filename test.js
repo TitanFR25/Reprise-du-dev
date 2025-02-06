@@ -1,37 +1,30 @@
-console.log("Bonjour tout le monde")
-
+// vérifier si le fichier et bien relié
+console.log("Bonjour tout le monde") 
 
 // faire un +1 au nombre
 function Increment(){
-   const i = 0
-   document.getElementById("valueInput").value = i++;
+   let valueInput =document.getElementById("valueInput");
+   let value = parseInt(valueInput.value,10);
+   valueInput.value = value +1;
 }
 
 // faire un -1 au nombre
 function Decrementer(){
-    const i = 0
-    document.getElementById("valueInput").value = i--;
+   let valueInput = document.getElementById("valueInput");
+   let value = parseInt(valueInput.value,10);
+    // decrementer si la valeur et supérieur à 0 uniquement
+   if(value > 0){
+        valueInput.value = value -1;
+   }
 }
 
-// arréter de decrementer une fois à 0 
-function stopDecrement(){
-    // obtenir l'element
-    const valueInput = document.getElementById("valueInput")
-    // definir la valeur 
-    let value = parseInt(valueInput.value,10)
-    // si la valeur et égal à 0 alors arréter de décrementer sinon continuer
-    if(valueInput <= 0){
-       clearInterval(Decrementer());
-    } else{
-        value--;
-        valueInput.value = value;
-    }
-}
+
+
 
 // autre possibiliter d'increment et decrement 
 
-// const x = 0;
-// const valueInput = document.getElementById("valueInput");
+// let x = 0;
+// let valueInput = document.getElementById("valueInput");
 // const Increment = document.getElementById("increment");
 // const Decrement = document.getElementById("decrement");
 
