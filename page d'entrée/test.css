@@ -19,8 +19,12 @@ header, main, footer {
 }
 
 main {
+    font-size: 1.15rem;
     flex-grow: 1;  /* Permettre au main de prendre tout l'espace disponible */
 }
+
+
+
 
 h1 {
     display: flex;
@@ -39,10 +43,10 @@ h1 {
 
 section {
     margin-top: 2rem;
-    background-color: aqua;
+    background-color: rgb(135, 134, 134);
     border: 2px red solid;
     max-width: 50%;
-    padding: 1rem;
+    padding: 5rem 1rem;
     margin-left: auto;  /* Centre la section horizontalement */
     margin-right: auto;  /* Centre la section horizontalement */
 }
@@ -81,6 +85,11 @@ section {
     padding: 5px 0 5px 0;
     text-align: center;
 }
+#valueInput:disabled{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
 
 #button_section {
     margin-top: 1rem;
@@ -100,9 +109,10 @@ footer {
     justify-content: space-between;
     font-size: 1.50rem;
     margin-top: auto;  /* Pousse le footer au bas de la page */
-    background-color: grey;
+    color: white;
+    background-color: black;
     
-    padding: 10px;
+    padding: 1.05rem;
 }
 
 #finish_footer {
