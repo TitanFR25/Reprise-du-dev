@@ -28,9 +28,6 @@ main {
     flex-grow: 1;  /* Permettre au main de prendre tout l'espace disponible */
 }
 
-
-
-
 h1 {
     display: flex;
     align-items: center;
